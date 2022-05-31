@@ -3,6 +3,8 @@ import Film from './useEffectPractice'
 import Cinema from './useMemoPractice'
 import TabBar from './TabBar'
 import Center from './Center'
+import NotFound from './not-found'
+// import HRouter from '../router'
 
 export default function App() {
   const [tabBarList] = useState([
@@ -37,6 +39,9 @@ export default function App() {
   return (
     <div>
       {
+        // <HRouter>
+        //   {useWhich()}
+        // </HRouter>
         useWhich()
       }
       <TabBar tbEvent={(index) => {
@@ -45,6 +50,7 @@ export default function App() {
               bottomList={ tabBarList } 
               currentIndex={ currentIndex } 
       />
+      <NotFound />
     </div>
   )
 }
