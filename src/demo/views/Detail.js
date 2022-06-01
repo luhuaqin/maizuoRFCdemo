@@ -17,14 +17,14 @@ export default function Detail() {
       setDetailObj(res.data.data.film)
     })
   },[id])
-  const { poster, name, premiereAt, filmType, grade, category, nation, runtime, synopsis } = detailObj
+  const { poster, name, premiereAt, grade, category, nation, runtime, synopsis } = detailObj
   return (
     <div>
       <Image src={poster} />
       <div style={{lineHeight: '25px', margin: '10px 15px', color: 'gray'}}>
         <p style={{fontSize: '20px', color: 'black'}}>
           {name}
-          <span style={{ display: 'inline-block', backgroundColor: '#D2D6DC', color: 'white', borderRadius: '2px', fontSize: '12px', width: '20px', textAlign: 'center' }}> { filmType.name }</span>
+          <span style={{ display: 'inline-block', backgroundColor: '#D2D6DC', color: 'white', borderRadius: '2px', fontSize: '12px', width: '20px', textAlign: 'center' }}>{}</span>
           <i><font color='orange'>{grade}分</font></i>
         </p>
         <p>{category}</p>

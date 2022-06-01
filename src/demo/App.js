@@ -7,6 +7,7 @@ import LRouter from './router/IndexRouter'
 // import Film from './views/film/Film'
 // import Cinema from './views/Cinema'
 // import Center from './views/Center'
+import '../utils/request'
 
 export default function App() {
   const location = useLocation()
